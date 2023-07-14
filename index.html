@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+    <link rel="stylesheet" href="tsform/tsform.css"> <!-- Стиль рулетки -->
+    <title>TS Form tsfireworks</title>
+    <style>
+        .form_container {
+            padding: 0px;
+            border: 0px none;
+            outline: 0px none;
+            vertical-align: top;
+            background: transparent none repeat scroll 0% 0%;
+            width: 95%;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1;
+            margin: 0px auto;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="form_container">
+       <!-- Начало рулетки -->
+        <div class="tsspin-wrapper">
+            <p><b>Пожалуйста, обратите внимание!
+                </b><br>На нашем сайте мы предлагаем читателям скидки на всю продукцию. Испытайте удачу и нажмите кнопку
+                «SPIN». Если вам повезет, вы сможете заказать нашу продукцию по более низкой цене, чем обычно! Удачи!
+            </p>
+
+        </div>
+        <div class="tsspinner_wrapper" id="order_anchor">
+            <div class="tswrappers__box">
+                <div class="tswrapper_F">
+                    <div class="tscontent">
+                        <div class="tsleft_block">
+                            <div class="ts_top">
+                                <div class="ts_text_1">Испытай удачу! Нажмите на колесо! Попробуйте получить скидку на
+                                    <a href="t.me/toadsage">Product_name</a> и забрать продукт <nobr>
+                                        за
+                                        <span class="ts_price">25$</span>
+                                    </nobr>
+                                </div>
+                                <div class="ts_text_2">Эта акция действует с
+                                    <script>
+                                        var localeString1 = new Date(new Date().getTime() - 3 * 86400000).toLocaleString("ru", {
+                                            year: 'numeric',
+                                            month: 'numeric',
+                                            day: 'numeric',
+                                        });
+                                        document.write(localeString1)
+                                    </script> по
+                                    <script>
+                                        var localeString2 = new Date(new Date().getTime() - 0 * 86400000).toLocaleString("ru", {
+                                            year: 'numeric',
+                                            month: 'numeric',
+                                            day: 'numeric',
+                                        });
+                                        document.write(localeString2)
+                                    </script>.
+                                </div>
+                            </div>
+                            <div class="ts_text">Они уже выиграли скидку<br>
+                                <span> и вы тоже можете!</span>
+                            </div>
+                            <div class="ts_wins">
+                                <div class="ts_win_line">
+                                    <div class="">Имя</div>
+                                    <div class="">Скидка</div>
+                                </div>
+                                <div class="ts_win_line comment">
+                                    <div class="">Николай Должанский</div>
+                                    <div class="">Выиграл Скидку 40%</div>
+                                </div>
+                                <div class="ts_win_line comment">
+                                    <div class="">Иван Гамаз </div>
+                                    <div class="">Выиграл Скидку 50%</div>
+                                </div>
+                                <div class="ts_win_line comment">
+                                    <div class="">Алёна Водонаева </div>
+                                    <div class="">Выиграла Скидку 20%</div>
+                                </div>
+                                <div class="ts_win_line comment">
+                                    <div class="">Алишер Моргенштерн </div>
+                                    <div class="">Выиграл Скидку 10%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tsspin-wrapper">
+                            <div class="tswheel-wrapper">
+                                <div class="tswheel">
+                                    <img alt="" class="tswheelcursor" src="tsform/tswheel-cursor.png"><img alt=""
+                                        class="tswheel-img" src="tsform/tsprizewheel.png">
+                                    <div class="tswheel-cursor">
+                                        <span class="cursor-text" onclick="spin();">SPIN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tswrapper__froms">
+                <div class="tswrapper_2">
+                    <div class="w2_tscontent">
+                        <form class="tsw2_right" action="" method="post">
+                            <div class="tsw2_head">
+                                <p style="  text-align: center; font-size: 18px;">Официальная форма заказа №.</p>
+                                <span style="display: block; text-align: center;">31 415 из 35.000 от
+                                    <script type="text/javascript">
+                                        var appendNull = function (num) {
+                                            return num < 10 ? 0 + num.toString() : num;
+                                        };
+                                        var p = new Date(new Date().getTime() - 0 * 86400000);
+                                        monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+                                        document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());
+                                    </script>
+                                </span>
+                            </div>
+                            <div class="tsw2r_text" id="tswrp2">
+                                Для получения Product_Name введите Имя и номер телефона
+                                <br>
+                                <div style="margin-top: 10px;">
+                                    <span style="color: red; font-size: 30px; margin-top: 10px;" class="ts_price">25
+                                        $</span>
+                                </div>
+                            </div>
+                            <select class="tsw2f_input" name="country">
+                                <option value="RU">Россия</option>
+                            </select>
+                            <input class="tsw2f_input" name="name" placeholder="Имя" required="" type="text">
+                            <input class="tsw2f_input" value="" name="phone" placeholder="Номер телефона" required=""
+                                type="tel">
+                            <div class="tsw2f_submit">
+                                <button type="submit">
+                                    Заказать за
+                                    <span class="ts_price">25 $</span>
+
+                                </button>
+                            </div>
+                            <div style="color: white;text-align: center;"><b></b></div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tsfireworks">
+                <div class="spin-result-wrapper">
+                    <div class="tspop-up-window">
+                        <div class="tsclose-popup"></div><span class="tspop-up-heading">Поздравляем!</span>
+                        <p class="tsclose-popup_p">Вы можете приобрести Product_Name <br>за <span class="ts_price">25
+                                $</span>!<br></p>
+                        <span class="tspop-up-button">OK</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Конец рулетки -->
+        </div>
+    </div>
+<!-- Скрипт для формы -->
+    <script src="tsform/tsform.js"></script>
+</body>
+
+</html>
